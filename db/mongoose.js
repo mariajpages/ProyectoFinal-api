@@ -1,15 +1,13 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://mariajpages:zado3572@cluster0.yrdcz.mongodb.net/paginaweb?retryWrites=true&w=majority', {
- useNewUrlParser: true,
- 
+
+
+
+const dbUser = process.env.dbUser;
+const dbPass = process.env.dbPass;
+
+const url = `mongodb+srv://${dbUser}:${dbPass}@cluster0.yrdcz.mongodb.net/paginaweb?retryWrites=true&w=majority`
+
+
+mongoose.connect(url, {
+    useNewUrlParser: true,
 });
-
-// Va a buscar variables de entorno del servicio en la nube.
-// const dbUser = process.env.dbUser;
-// const dbPass = process.env.dbPass;
-
-
-
-// mongoose.connect(url, {
-//     useNewUrlParser: true,
-// });
