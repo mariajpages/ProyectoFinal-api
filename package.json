@@ -4,7 +4,8 @@
   "description": "Mi sitio Web",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "Maria Jose",
   "license": "ISC",
@@ -13,7 +14,9 @@
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "mongodb": "^4.3.0",
+    "mongoose": "^6.1.5",
     "postman-request": "^2.88.1-postman.31",
+    "start": "^5.1.0",
     "validator": "^13.7.0"
   }
 }
