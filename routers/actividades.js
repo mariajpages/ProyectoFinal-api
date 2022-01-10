@@ -22,17 +22,7 @@ router.post('/actividades', (req,res) =>{
         .catch(() => {
             res.status(500).send(err)
         });
-    // const ar = [];
-    // ar.push(req.body);
-    // // req.body.created = new Date();
-
-    // getClient((err, db) => {
-    //     if (err) return res.send(err)
-    //     db.collection('actividades').insertMany(ar, (err, result) => {
-    //         if (err) return res.send(err)
-    //         return res.send(result)
-    //     })
-    // })
+    
 
 })
 
