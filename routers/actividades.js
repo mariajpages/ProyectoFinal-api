@@ -4,7 +4,7 @@ const Actividad= require('../models/actividades');
 const router = express.Router()
 
 
-router.get('/actividades', (req,res) =>{
+router.get('/administrador', (req,res) =>{
     Actividad.find()
         .then((actividades)=>{
             res.send(actividades);
@@ -13,7 +13,7 @@ router.get('/actividades', (req,res) =>{
         .catch((error) => res.send(err));
 });
 
-router.post('/actividades', (req,res) =>{
+router.post('/administrador', (req,res) =>{
     const actividad = new Actividad (req.body)
     actividad.save()
         .then(() => {
@@ -26,7 +26,7 @@ router.post('/actividades', (req,res) =>{
 
 })
 
-router.get('/actividad/id', (req,res) => {
+router.get('/administrador/id', (req,res) => {
     const {id} = req.params
     Actividad.findByIdç(id)
         .then((actividad) => {

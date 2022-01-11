@@ -5,7 +5,7 @@ const Comentario = require('../models/comentario');
 const router = express.Router()
 
 
-router.get('/form-comentarios', (req,res) =>{
+router.get('/main', (req,res) =>{
     Comentario.find()
         .then((formComentarios)=>{
             res.send(formComentarios);
@@ -14,7 +14,7 @@ router.get('/form-comentarios', (req,res) =>{
         .catch((error) => res.send(err));
 });
 
-router.post('/form-comentarios', (req,res) =>{
+router.post('/main', (req,res) =>{
     const comentario = new Comentario (req.body)
     comentario.save()
         .then(() => {
