@@ -26,14 +26,14 @@ router.post('/administrador', (req,res) =>{
 
 })
 
-router.get('/administrador/id', (req,res) => {
-    const {id} = req.params
-    Actividad.findByIdç(id)
-        .then((actividad) => {
-            res.send(actividad);
-        })
-        .catch((err) => {res.send(err)});
-})
+// router.get('/administrador/id', (req,res) => {
+//     const {id} = req.params
+//     Actividad.findByIdç(id)
+//         .then((actividad) => {
+//             res.send(actividad);
+//         })
+//         .catch((err) => {res.send(err)});
+// })
 
 // router.patch('actividades/:id', (req, res) => {
 //     const { id } = req.params;
