@@ -11,7 +11,7 @@ const schema = new Schema ({
         type: String,
         required: true
     },
-    Comment:{
+    Content:{
         type: String,
         required: true
     }
